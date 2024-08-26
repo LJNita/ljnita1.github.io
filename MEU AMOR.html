@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa para Você!</title>
+    <style>
+        body {
+            background-color: #ffddc1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff6f61;
+            font-size: 48px;
+        }
+        p {
+            font-size: 24px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4c39;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oi, Amor!</h1>
+    <p>Clique no botão para ver sua surpresa!</p>
+    <button onclick="revealMessage()">Ver Surpresa</button>
+
+    <p id="message" style="display:none;">Você é a melhor parte do meu dia! Te amo muito minha princesa 💖. Espero que tenha um bom dia de trabalho.</p>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
